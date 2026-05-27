@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>
+        {% block title %}
+        AI Interview Coach
+        {% endblock %}
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+  
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+
+            <div>
+                <h2>🤖 AI Interview Coach</h2>
+            </div>
+
+            <div>
+                <a href="{% url 'home' %}">Home</a>
+
+                <a href="{% url 'dashboard' %}">
+                    Dashboard
+                </a>
+
+                <a href="{% url 'role_selection' %}">
+                    Interview
+                </a>
+
+                <a href="{% url 'login' %}">
+                    Login
+                </a>
+
+                <a href="{% url 'register' %}">
+                    Register
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>AI Interview Coach</h3>
+
+        <p>
+            Practice interviews with AI and improve
+            your confidence.
+        </p>
+
+        <p>
+            © 2026 All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+</html>

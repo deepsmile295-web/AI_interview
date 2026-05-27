@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}
+AI Feedback
+{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1>AI Interview Feedback</h1>
+
+    <p>
+        Here is your performance analysis.
+    </p>
+
+</section>
+
+<hr>
+
+<section>
+
+    <div>
+
+        <h2>Overall Score</h2>
+        <h1>84%</h1>
+
+    </div>
+
+</section>
+
+<hr>
+
+<section>
+
+    <div>
+
+        <h2>Confidence</h2>
+        <p>80%</p>
+
+    </div>
+
+    <div>
+
+        <h2>Communication</h2>
+        <p>76%</p>
+
+    </div>
+
+    <div>
+
+        <h2>Technical Accuracy</h2>
+        <p>92%</p>
+
+    </div>
+
+</section>
+
+<hr>
+
+<section>
+
+    <h2>AI Suggestions</h2>
+
+    <ul>
+
+        <li>
+            Improve confidence while speaking.
+        </li>
+
+        <li>
+            Give shorter and clearer answers.
+        </li>
+
+        <li>
+            Add more practical examples.
+        </li>
+
+    </ul>
+
+</section>
+
+<hr>
+
+<section>
+
+    <a href="{% url 'dashboard' %}">
+        <button>
+            Go to Dashboard
+        </button>
+    </a>
+
+</section>
+
+{% endblock %}

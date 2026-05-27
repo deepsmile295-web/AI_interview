@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1>Welcome Back</h1>
+
+    <p>
+        Login to continue your interview journey.
+    </p>
+
+    <form>
+
+        <div>
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter email">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Password</label><br>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <br>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}

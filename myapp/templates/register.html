@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1>Create Account</h1>
+
+    <p>
+        Join AI Interview Coach today.
+    </p>
+
+    <form>
+
+        <div>
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Name">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Email</label><br>
+            <input type="email" placeholder="Email">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Password</label><br>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <br>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}

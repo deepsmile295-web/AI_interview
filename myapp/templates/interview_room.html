@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Interview Room
+{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1>Interview Room</h1>
+
+    <p>
+        Answer carefully and confidently.
+    </p>
+
+</section>
+
+<hr>
+
+<section>
+
+    <h2>
+        Question 1
+    </h2>
+
+    <p>
+        Tell me about yourself.
+    </p>
+
+</section>
+
+<hr>
+
+<section>
+
+    <form>
+
+        <label>Your Answer</label>
+
+        <br><br>
+
+        <textarea
+            rows="8"
+            cols="70"
+            placeholder="Write your answer here..."
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Submit Answer
+        </button>
+
+    </form>
+
+</section>
+
+<hr>
+
+<section>
+
+    <p>Progress: 1 / 5 Questions</p>
+
+</section>
+
+{% endblock %}

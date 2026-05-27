@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Select Role
+{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1>Select Interview Role</h1>
+
+    <p>
+        Choose a career role to begin.
+    </p>
+
+</section>
+
+<hr>
+
+<section>
+
+    <div>
+
+        <h2>💻 Software Engineer</h2>
+
+        <p>
+            Coding and technical questions.
+        </p>
+
+        <a href="{% url 'interview_room' %}">
+            <button>Start</button>
+        </a>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <h2>📊 Data Analyst</h2>
+
+        <p>
+            Analytics and problem-solving.
+        </p>
+
+        <a href="{% url 'interview_room' %}">
+            <button>Start</button>
+        </a>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <h2>👔 HR Interview</h2>
+
+        <p>
+            Communication and personality.
+        </p>
+
+        <a href="{% url 'interview_room' %}">
+            <button>Start</button>
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

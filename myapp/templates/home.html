@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h1>Crack Your Next Interview with AI</h1>
+            <p>
+                Practice role-based interviews and get instant AI feedback—so you improve after every answer.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{% url 'role_selection' %}">
+                    <button type="button" class="primary">Start Interview</button>
+                </a>
+
+                <a href="{% url 'dashboard' %}">
+                    <button type="button" class="secondary">Dashboard</button>
+                </a>
+            </div>
+
+            <div class="hero-chips">
+                <span class="chip">🎯 Role-based questions</span>
+                <span class="chip">⚡ Instant feedback</span>
+                <span class="chip">📈 Progress tracking</span>
+            </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+            <div class="hero-card-title">Today’s Focus</div>
+            <div class="hero-card-stat">
+                <div class="stat">1</div>
+                <div class="stat-label">Interview Session</div>
+            </div>
+            <div class="hero-card-list">
+                <div class="bullet">Answer with STAR structure</div>
+                <div class="bullet">Improve clarity & confidence</div>
+                <div class="bullet">Review AI feedback</div>
+            </div>
+            <div class="hero-card-glow"></div>
+        </div>
+    </div>
+
+</section>
+
+<hr>
+
+<section class="features">
+
+    <h2>Platform Features</h2>
+    <p class="features-subtitle">
+        Built to help you practice smarter and learn faster.
+    </p>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Questions</h3>
+            <p>AI asks role-based interview questions that match the job you want.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Progress Tracking</h3>
+            <p>Monitor growth, revisit your interview history, and keep improving.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Feedback</h3>
+            <p>Get actionable AI analysis to strengthen your answers immediately.</p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
